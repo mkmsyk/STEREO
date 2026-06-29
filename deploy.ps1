@@ -13,13 +13,13 @@ Write-Host "==> [Build] Preparing files to copy..." -ForegroundColor Cyan
 
 # 1. 成果物の存在確認
 $stereoFiles = @(
-    (Join-Path $scriptDir "index.html"),
-    (Join-Path $scriptDir "style.css"),
-    (Join-Path $scriptDir "stereo.js"),
-    (Join-Path $scriptDir "app.js")
+    "$scriptDir\index.html",
+    "$scriptDir\style.css",
+    "$scriptDir\stereo.js",
+    "$scriptDir\app.js"
 )
 
-$monoralGameJs = Join-Path $monoralDir "gb-demo\game.js"
+$monoralGameJs = "$monoralDir\gb-demo\game.js"
 
 # 2. コピー処理の実行
 Write-Host "==> [Copy] Syncing files to CMS: $cmsGameTarget" -ForegroundColor Cyan
@@ -59,11 +59,7 @@ $originalLocation = Get-Location
 Set-Location -LiteralPath $cmsDir
 
 Write-Host "==> [Git] Committing changes in CMS..." -ForegroundColor Cyan
-git add src/main/resources/public/games/gb-demo/index.html `
-        src/main/resources/public/games/gb-demo/style.css `
-        src/main/resources/public/games/gb-demo/stereo.js `
-        src/main/resources/public/games/gb-demo/app.js `
-        src/main/resources/public/games/gb-demo/game.js
+git add src/main/resources/public/games/gb-demo/index.html src/main/resources/public/games/gb-demo/style.css src/main/resources/public/games/gb-demo/stereo.js src/main/resources/public/games/gb-demo/app.js src/main/resources/public/games/gb-demo/game.js
 
 $gitStatus = git status --porcelain
 if ($gitStatus) {
