@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STEREO / MONORAL - Nested Console World</title>
+  <link rel="stylesheet" href="style.css?v=1.0.20">
+  <!-- Three.js & OrbitControls CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <!-- スマホ実機用クラッシュロガー -->
+  <div id="crash-log" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 999999; background: #ef4444; color: white; font-family: monospace; font-size: 11px; padding: 10px; display: none; box-sizing: border-box; word-break: break-all;"></div>
+  <script>
+    window.addEventListener('error', function(e) {
+      const log = document.getElementById('crash-log');
+      if (log) {
+        log.style.display = 'block';
+        log.textContent = "CRASH: " + e.message + " at " + e.filename + ":" + e.lineno + ":" + e.colno;
+      }
+    });
+  </script>
+
+  <!-- 3Dレンダリング用コンテナ -->
+  <div id="canvas-container"></div>
+
+  <!-- UIオーバーレイ -->
+  <div class="ui-overlay">
+    <!-- 操作方法パネル (左下) -->
+    <div class="glass-panel left-bottom-panel" id="instruction-panel">
+      <h3>CONTROLS</h3>
+      <ul class="control-list">
+        <li><strong>Click Console</strong>: Pick Up / Float</li>
+        <li><strong>Click Power Switch</strong>: Power ON/OFF</li>
+        <li><strong>D-Pad / WASD</strong>: Move UFO / Cursor</li>
+        <li><strong>A Button / Space</strong>: Jump / Draw</li>
+        <li><strong>B Button / Shift</strong>: Erase</li>
+      </ul>
+    </div>
+    <!-- 画面上部センターの操作パネル (起き上がり時のみ表示) -->
+    <div class="glass-panel top-control-panel" id="active-ui-panel" style="display: none;">
+      <button id="btn-eject" class="btn" title="Eject Cartridge">EJECT</button>
+      <button id="btn-putback" class="btn btn-danger" title="Put Console Back">PUT BACK</button>
+    </div>
+
+    <!-- 水印 (右下) -->
+    <div class="right-bottom-container">
+      <div class="watermark">STEREO & MONORAL Engine</div>
+    </div>
+  </div>
+
+  <!-- モニタに投影するオフスクリーンキャンバス (隠し要素) -->
+  <canvas id="virtual-screen" width="160" height="144" style="display: none;"></canvas>
+
+  <!-- カスタム警告ダイアログ -->
+  <div id="error-dialog" class="error-dialog-overlay" style="display: none;">
+    <div class="error-dialog-content">
+      <div class="error-dialog-icon">⚠️</div>
+      <h3 class="error-dialog-title">POWER OFF FIRST!</h3>
+      <p class="error-dialog-message">Turn off the power before replacing the cartridge.</p>
+      <button id="error-dialog-close" class="btn-error-close">OK</button>
+    </div>
+  </div>
+
+  <!-- 2D Engine, 3D Engine, App Controller -->
+  <script src="game.js?v=1.0.20"></script>
+  <script src="stereo.js?v=1.0.20"></script>
+  <script src="app.js?v=1.0.20"></script>
+</body>
+</html>
