@@ -4,7 +4,7 @@
 $ErrorActionPreference = 'Stop'
 
 # ディレクトリパスの設定
-$scriptDir = (Get-Location).Path
+$scriptDir = "C:\Users\mkmsy\Repositories\STEREO"
 $monoralDir = "C:\Users\mkmsy\Repositories\MONORAL"
 $cmsDir = "C:\Users\mkmsy\Repositories\CMS"
 $cmsGameTarget = Join-Path $cmsDir "src\main\resources\public\games\gb-demo"
