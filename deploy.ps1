@@ -12,12 +12,7 @@ $cmsGameTarget = Join-Path $cmsDir "src\main\resources\public\games\gb-demo"
 Write-Host "==> [Build] Preparing files to copy..." -ForegroundColor Cyan
 
 # 1. 成果物の存在確認
-$stereoFiles = @(
-    "$scriptDir\index.html",
-    "$scriptDir\style.css",
-    "$scriptDir\stereo.js",
-    "$scriptDir\app.js"
-)
+$stereoFiles = "$scriptDir\index.html", "$scriptDir\style.css", "$scriptDir\stereo.js", "$scriptDir\app.js"
 
 $monoralGameJs = "$monoralDir\gb-demo\game.js"
 
