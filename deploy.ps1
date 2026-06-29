@@ -11,29 +11,33 @@ $cmsGameTarget = Join-Path $cmsDir "src\main\resources\public\games\gb-demo"
 
 Write-Host "==> [Build] Preparing files to copy..." -ForegroundColor Cyan
 
-# 1. 成果物の存在確認
-$stereoFiles = "$scriptDir\index.html", "$scriptDir\style.css", "$scriptDir\stereo.js", "$scriptDir\app.js"
-
-$monoralGameJs = "$monoralDir\gb-demo\game.js"
-
-# 2. コピー処理の実行
+# 1. コピー処理の実行
 Write-Host "==> [Copy] Syncing files to CMS: $cmsGameTarget" -ForegroundColor Cyan
 
 if (-not (Test-Path -LiteralPath $cmsGameTarget)) {
     throw "Target CMS directory not found: $cmsGameTarget"
 }
 
-# STEREOの3Dアセット
-foreach ($file in $stereoFiles) {
-    if (-not (Test-Path -LiteralPath $file)) {
-        throw "Missing STEREO source file: $file"
+# STEREOの3Dアセットのコピー
+$filesToCopy = @(
+    "index.html",
+    "style.css",
+    "stereo.js",
+    "app.js"
+)
+
+foreach ($fileName in $filesToCopy) {
+    $src = Join-Path $scriptDir $fileName
+    if (-not (Test-Path -LiteralPath $src)) {
+        throw "Missing STEREO source file: $src"
     }
-    $dest = Join-Path $cmsGameTarget (Split-Path $file -Leaf)
-    Copy-Item -LiteralPath $file -Destination $dest -Force
-    Write-Host "   Copied: $(Split-Path $file -Leaf)"
+    $dest = Join-Path $cmsGameTarget $fileName
+    Copy-Item -LiteralPath $src -Destination $dest -Force
+    Write-Host "   Copied: $fileName"
 }
 
-# MONORALの2Dコア
+# MONORALの2Dコアのコピー
+$monoralGameJs = Join-Path $monoralDir "gb-demo\game.js"
 if (-not (Test-Path -LiteralPath $monoralGameJs)) {
     throw "Missing MONORAL source file: $monoralGameJs"
 }
@@ -41,7 +45,7 @@ $destGameJs = Join-Path $cmsGameTarget "game.js"
 Copy-Item -LiteralPath $monoralGameJs -Destination $destGameJs -Force
 Write-Host "   Copied: game.js (from MONORAL)"
 
-# 3. CMSのデプロイスクリプトを起動
+# 2. CMSのデプロイスクリプトを起動
 Write-Host "`n==> [Deploy] Triggering CMS VPS deployment..." -ForegroundColor Cyan
 $cmsDeployScript = Join-Path $cmsDir "deploy.ps1"
 
@@ -49,8 +53,7 @@ if (-not (Test-Path -LiteralPath $cmsDeployScript)) {
     throw "CMS Deploy script not found: $cmsDeployScript"
 }
 
-# CMSリポジトリ側でコミット
-$originalLocation = Get-Location
+# CMSリポジトリ側へ移動してコミット＆プッシュ＆デプロイ
 Set-Location -LiteralPath $cmsDir
 
 Write-Host "==> [Git] Committing changes in CMS..." -ForegroundColor Cyan
@@ -66,5 +69,4 @@ if ($gitStatus) {
 # VPSへデプロイを実行
 powershell -ExecutionPolicy Bypass -File .\deploy.ps1
 
-Set-Location $originalLocation
 Write-Host "`n==> [Done] STEREO & MONORAL successfully deployed to VPS!" -ForegroundColor Green
