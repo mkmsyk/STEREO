@@ -1,0 +1,1291 @@
+[
+  {
+    "entityCode": "ITEM_WIZ1_ANOINTED_MACE",
+    "category": "Weapon",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": "",
+            "weaponAnimationKey": "mace"
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "RightHand",
+            "attackRange": "Melee",
+            "baseAttack": 5,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_weapon",
+          "props": {
+            "attack": 5,
+            "defence": 0,
+            "range": "Melee",
+            "twoHanded": false,
+            "slot": "RightHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "聖別メイス",
+            "alias": "Anointed Mace",
+            "wiz1ClassMask": "P",
+            "tags": "blessed"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_BREAST_PLATE",
+    "category": "Armor",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "Body",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 4,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 4,
+            "slot": "Body"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "ブレストプレート",
+            "alias": "Breast Plate",
+            "wiz1ClassMask": "FSL"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_CHAIN_MAIL",
+    "category": "Armor",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "Body",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 3,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 3,
+            "slot": "Body"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "チェインメイル",
+            "alias": "Chain Mail",
+            "wiz1ClassMask": "FSLTNP"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_CHAIN_MAIL_PLUS_1",
+    "category": "Armor",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "Body",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 4,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 4,
+            "slot": "Body"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "チェインメイル+1",
+            "alias": "Chain Mail +1",
+            "wiz1ClassMask": "FSLP"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_CURSED_HELM",
+    "category": "Helmet",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "Head",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 0,
+            "slot": "Head"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "呪いの兜",
+            "alias": "Cursed Helm",
+            "wiz1ClassMask": "FSLTNP",
+            "cursed": true,
+            "uncurseCostGold": 250,
+            "cursedEffects": [
+              {
+                "stat": "DEF",
+                "delta": -1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_CURSED_KNIFE",
+    "category": "Weapon",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": "",
+            "weaponAnimationKey": "dagger"
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "RightHand",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_weapon",
+          "props": {
+            "attack": 0,
+            "defence": 0,
+            "range": "Melee",
+            "twoHanded": false,
+            "slot": "RightHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "呪いのナイフ",
+            "alias": "Cursed Knife",
+            "wiz1ClassMask": "FSLTNBMP",
+            "cursed": true,
+            "uncurseCostGold": 150,
+            "cursedEffects": [
+              {
+                "stat": "ATK",
+                "delta": -2
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_CURSED_RING",
+    "category": "Accessory",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "Ring",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 0,
+            "slot": "Ring"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "呪いの指輪",
+            "alias": "Cursed Ring",
+            "wiz1ClassMask": "FSLTNBPMP",
+            "cursed": true,
+            "uncurseCostGold": 400,
+            "cursedEffects": [
+              {
+                "stat": "ATK",
+                "delta": -1
+              },
+              {
+                "stat": "DEF",
+                "delta": -1
+              },
+              {
+                "stat": "hpMax",
+                "delta": -1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_DAGGER",
+    "category": "Weapon",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": "",
+            "weaponAnimationKey": "dagger"
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "RightHand",
+            "attackRange": "Melee",
+            "baseAttack": 2,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_weapon",
+          "props": {
+            "attack": 2,
+            "defence": 0,
+            "range": "Melee",
+            "twoHanded": false,
+            "slot": "RightHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "ダガー",
+            "alias": "Dagger",
+            "wiz1ClassMask": "FSLTNBMP"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_EVIL_RING",
+    "category": "Accessory",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "Ring",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 0,
+            "slot": "Ring"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "邪悪な指輪",
+            "alias": "Evil Ring",
+            "wiz1ClassMask": "FSLTNBPMP",
+            "cursed": true,
+            "uncurseCostGold": 800,
+            "cursedEffects": [
+              {
+                "stat": "ATK",
+                "delta": -3
+              },
+              {
+                "stat": "DEF",
+                "delta": -3
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_HELM",
+    "category": "Helmet",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "Head",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 1,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 1,
+            "slot": "Head"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "ヘルメット",
+            "alias": "Helm",
+            "wiz1ClassMask": "FSLTNP"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_LARGE_SHIELD",
+    "category": "Shield",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "LeftHand",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 3,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": true
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 3,
+            "slot": "LeftHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "ラージシールド",
+            "alias": "Large Shield",
+            "wiz1ClassMask": "FSL"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_LEATHER_ARMOR",
+    "category": "Armor",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "Body",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 2,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 2,
+            "slot": "Body"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "レザーアーマー",
+            "alias": "Leather Armor",
+            "wiz1ClassMask": "FSLTNBP"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_LONG_SWORD",
+    "category": "Weapon",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": "",
+            "weaponAnimationKey": "sword"
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "RightHand",
+            "attackRange": "Melee",
+            "baseAttack": 5,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_weapon",
+          "props": {
+            "attack": 5,
+            "defence": 0,
+            "range": "Melee",
+            "twoHanded": false,
+            "slot": "RightHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "ロングソード",
+            "alias": "Long Sword",
+            "wiz1ClassMask": "FSL"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_LONG_SWORD_PLUS_1",
+    "category": "Weapon",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": "",
+            "weaponAnimationKey": "sword"
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "RightHand",
+            "attackRange": "Melee",
+            "baseAttack": 6,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_weapon",
+          "props": {
+            "attack": 6,
+            "defence": 0,
+            "range": "Melee",
+            "twoHanded": false,
+            "slot": "RightHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "ロングソード+1",
+            "alias": "Long Sword +1",
+            "wiz1ClassMask": "FSL"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_MACE",
+    "category": "Weapon",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": "",
+            "weaponAnimationKey": "mace"
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "RightHand",
+            "attackRange": "Melee",
+            "baseAttack": 4,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_weapon",
+          "props": {
+            "attack": 4,
+            "defence": 0,
+            "range": "Melee",
+            "twoHanded": false,
+            "slot": "RightHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "メイス",
+            "alias": "Mace",
+            "wiz1ClassMask": "PB"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_MURAMASA",
+    "category": "Weapon",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": "",
+            "weaponAnimationKey": "sword"
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "RightHand",
+            "attackRange": "Melee",
+            "baseAttack": 12,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_weapon",
+          "props": {
+            "attack": 12,
+            "defence": 0,
+            "range": "Melee",
+            "twoHanded": false,
+            "slot": "RightHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "村正",
+            "alias": "Muramasa Blade!",
+            "wiz1ClassMask": "S"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_RING_OF_PROTECTION",
+    "category": "Accessory",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "Accessory",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 2,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 2,
+            "slot": "Accessory"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "プロテクションリング",
+            "alias": "Ring of Protection",
+            "wiz1ClassMask": "FSLTNBPMP"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_ROBES",
+    "category": "Armor",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "Body",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 1,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 1,
+            "slot": "Body"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "ローブ",
+            "alias": "Robes",
+            "wiz1ClassMask": "MBP"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_SHIELD_OF_LORDS",
+    "category": "Shield",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "LeftHand",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 5,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": true
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 5,
+            "slot": "LeftHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "ロードの盾",
+            "alias": "Shield of Lords",
+            "wiz1ClassMask": "L"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_SHORT_SWORD",
+    "category": "Weapon",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": "",
+            "weaponAnimationKey": "sword"
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "RightHand",
+            "attackRange": "Melee",
+            "baseAttack": 4,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_weapon",
+          "props": {
+            "attack": 4,
+            "defence": 0,
+            "range": "Melee",
+            "twoHanded": false,
+            "slot": "RightHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "ショートソード",
+            "alias": "Short Sword",
+            "wiz1ClassMask": "FSLTNB"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_SHURIKEN",
+    "category": "Weapon",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": "",
+            "weaponAnimationKey": "dagger"
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "RightHand",
+            "attackRange": "Melee",
+            "baseAttack": 5,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_weapon",
+          "props": {
+            "attack": 5,
+            "defence": 0,
+            "range": "Melee",
+            "twoHanded": false,
+            "slot": "RightHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "手裏剣",
+            "alias": "Shuriken",
+            "wiz1ClassMask": "N"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_SMALL_SHIELD",
+    "category": "Shield",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "LeftHand",
+            "attackRange": "Melee",
+            "baseAttack": 0,
+            "baseDefence": 2,
+            "hpMax": 0,
+            "twoHanded": false,
+            "leftHandOnly": true
+          }
+        },
+        {
+          "id": "item.status_armor",
+          "props": {
+            "defence": 2,
+            "slot": "LeftHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "スモールシールド",
+            "alias": "Small Shield",
+            "wiz1ClassMask": "FSLTP"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_STAFF",
+    "category": "Weapon",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": "",
+            "weaponAnimationKey": "staff"
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "RightHand",
+            "attackRange": "Melee",
+            "baseAttack": 3,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": true,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_weapon",
+          "props": {
+            "attack": 3,
+            "defence": 0,
+            "range": "Melee",
+            "twoHanded": true,
+            "slot": "RightHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "スタッフ",
+            "alias": "Staff",
+            "wiz1ClassMask": "MBP"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "ITEM_WIZ1_STAFF_PLUS_2",
+    "category": "Weapon",
+    "entityCategory": "item",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "item.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": "",
+            "weaponAnimationKey": "staff"
+          }
+        },
+        {
+          "id": "item.equip",
+          "props": {
+            "slotType": "RightHand",
+            "attackRange": "Melee",
+            "baseAttack": 4,
+            "baseDefence": 0,
+            "hpMax": 0,
+            "twoHanded": true,
+            "leftHandOnly": false
+          }
+        },
+        {
+          "id": "item.status_weapon",
+          "props": {
+            "attack": 4,
+            "defence": 0,
+            "range": "Melee",
+            "twoHanded": true,
+            "slot": "RightHand"
+          }
+        },
+        {
+          "id": "item.action_equip",
+          "props": {}
+        },
+        {
+          "id": "item.meta",
+          "payload": {
+            "displayName": "スタッフ+2",
+            "alias": "Staff +2",
+            "wiz1ClassMask": "MBP"
+          }
+        }
+      ]
+    }
+  }
+]

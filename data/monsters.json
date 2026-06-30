@@ -1,0 +1,3783 @@
+[
+  {
+    "entityCode": "AVATAR_PLAYER",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "Player",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 1,
+            "maxHP": 10,
+            "maxMP": 8,
+            "maxSP": 0,
+            "atk": 4,
+            "def": 3,
+            "res": 3
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 10,
+            "vit": 10,
+            "int": 10,
+            "cat": 10,
+            "dex": 10,
+            "agi": 10
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_ACOLYTE",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 1,
+            "maxHP": 4,
+            "maxMP": 4,
+            "maxSP": 0,
+            "atk": 3,
+            "def": 3,
+            "res": 4
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 9,
+            "vit": 11,
+            "int": 10,
+            "cat": 14,
+            "dex": 9,
+            "agi": 9
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Priest"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 305
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "見習い僧侶",
+            "alias": "Lvl 1 Priest",
+            "treasureClass": "B",
+            "knownSpells": "BADIOS,DIOS"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_ANACONDA",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Beast",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 2,
+            "maxHP": 9,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 5,
+            "def": 3,
+            "res": 2
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 13,
+            "vit": 13,
+            "int": 4,
+            "cat": 4,
+            "dex": 11,
+            "agi": 9
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Beast"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.4,
+            "rareItem": "",
+            "rareRate": 0.05
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 600
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "アナコンダ",
+            "alias": "Anaconda",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_ARCH_DEMON",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Demon",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 12,
+            "maxHP": 80,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 18,
+            "def": 15,
+            "res": 12
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 18,
+            "vit": 18,
+            "int": 15,
+            "cat": 14,
+            "dex": 15,
+            "agi": 14
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 9500
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "アーチ・デーモン",
+            "alias": "Arch Demon",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_BISHOP",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 1,
+            "maxHP": 3,
+            "maxMP": 4,
+            "maxSP": 0,
+            "atk": 2,
+            "def": 1,
+            "res": 5
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 8,
+            "vit": 9,
+            "int": 14,
+            "cat": 12,
+            "dex": 10,
+            "agi": 9
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Mage"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 305
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "見習い魔術師",
+            "alias": "Lvl 1 Mage",
+            "treasureClass": "B",
+            "knownSpells": "HALITO,KATINO"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_BORING_BEETLE",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Insect",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 5,
+            "maxHP": 22,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 9,
+            "def": 7,
+            "res": 4
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 14,
+            "vit": 14,
+            "int": 5,
+            "cat": 6,
+            "dex": 10,
+            "agi": 8
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 1500
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ボーリング・ビートル",
+            "alias": "Boring Beetle",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_BUBBLY_SLIME",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Slime",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 1,
+            "maxHP": 4,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 2,
+            "def": 1,
+            "res": 0
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 8,
+            "vit": 8,
+            "int": 3,
+            "cat": 3,
+            "dex": 8,
+            "agi": 6
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Beast"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.4,
+            "rareItem": "",
+            "rareRate": 0.0
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 55
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "プチ・スライム",
+            "alias": "Bubbly Slime",
+            "treasureClass": "A"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_CAPYBARA",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Beast",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 1,
+            "maxHP": 5,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 3,
+            "def": 2,
+            "res": 1
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 10,
+            "vit": 11,
+            "int": 4,
+            "cat": 4,
+            "dex": 8,
+            "agi": 7
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Beast"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.3,
+            "rareItem": "",
+            "rareRate": 0.02
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 240
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "カピバラ",
+            "alias": "Capybara",
+            "treasureClass": "A"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_CHAMPION_SAMURAI",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 4,
+            "maxHP": 18,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 8,
+            "def": 8,
+            "res": 5
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 16,
+            "vit": 14,
+            "int": 11,
+            "cat": 13,
+            "dex": 15,
+            "agi": 15
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 1100
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "侍大将",
+            "alias": "Champion Samurai",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_CREEPING_CRUD",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Ooze",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 1,
+            "maxHP": 5,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 4,
+            "def": 2,
+            "res": 3
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 10,
+            "vit": 10,
+            "int": 3,
+            "cat": 3,
+            "dex": 6,
+            "agi": 5
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Beast"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.3,
+            "rareItem": "",
+            "rareRate": 0.02
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 100
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "蠕動するクラッド",
+            "alias": "Creeping Crud",
+            "treasureClass": "A",
+            "tags": "paralysis_attack"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_DRAGON_FLY",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Insect",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 3,
+            "maxHP": 8,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 5,
+            "def": 6,
+            "res": 3
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 11,
+            "vit": 9,
+            "int": 4,
+            "cat": 4,
+            "dex": 14,
+            "agi": 17
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.05
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 500
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ドラゴンフライ",
+            "alias": "Dragon Fly",
+            "treasureClass": "B",
+            "tags": "fast"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_FROST_GIANT",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Giant",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 12,
+            "maxHP": 90,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 19,
+            "def": 14,
+            "res": 10
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 19,
+            "vit": 18,
+            "int": 9,
+            "cat": 10,
+            "dex": 12,
+            "agi": 11
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 10000
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "フロスト・ジャイアント",
+            "alias": "Frost Giant",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_GAS_CLOUD",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Elemental",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 2,
+            "maxHP": 7,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 5,
+            "def": 4,
+            "res": 5
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 11,
+            "vit": 12,
+            "int": 5,
+            "cat": 5,
+            "dex": 9,
+            "agi": 10
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Beast"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.3,
+            "rareItem": "",
+            "rareRate": 0.05
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 415
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ガス・クラウド",
+            "alias": "Gas Cloud",
+            "treasureClass": "B",
+            "tags": "poison_attack"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_GAS_DRAGON",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Dragon",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 6,
+            "maxHP": 30,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 10,
+            "def": 8,
+            "res": 6
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 16,
+            "vit": 15,
+            "int": 8,
+            "cat": 8,
+            "dex": 11,
+            "agi": 9
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 2200
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ガス・ドラゴン",
+            "alias": "Gas Dragon",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_GIANT_TOAD",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Beast",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 2,
+            "maxHP": 8,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 4,
+            "def": 5,
+            "res": 2
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 13,
+            "vit": 13,
+            "int": 4,
+            "cat": 4,
+            "dex": 8,
+            "agi": 7
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.05
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 350
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ジャイアントトード",
+            "alias": "Giant Toad",
+            "treasureClass": "A"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_HIGHWAYMAN",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 2,
+            "maxHP": 5,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 5,
+            "def": 5,
+            "res": 2
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 12,
+            "vit": 11,
+            "int": 9,
+            "cat": 6,
+            "dex": 13,
+            "agi": 13
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.6,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 460
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "山賊",
+            "alias": "Highwayman",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_HIGH_NINJA",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 12,
+            "maxHP": 65,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 18,
+            "def": 14,
+            "res": 12
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 18,
+            "vit": 15,
+            "int": 14,
+            "cat": 14,
+            "dex": 18,
+            "agi": 18
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 8500
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ハイ・ニンジャ",
+            "alias": "High Ninja",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_HIGH_WIZARD",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 10,
+            "maxHP": 32,
+            "maxMP": 24,
+            "maxSP": 0,
+            "atk": 8,
+            "def": 7,
+            "res": 14
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 9,
+            "vit": 12,
+            "int": 18,
+            "cat": 16,
+            "dex": 14,
+            "agi": 13
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Mage"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 6500
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ハイ・ウィザード",
+            "alias": "High Wizard",
+            "treasureClass": "B",
+            "knownSpells": "TILTOWAIT,LAHALITO"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_HOBGOBLIN",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Goblinoid",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 2,
+            "maxHP": 6,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 5,
+            "def": 5,
+            "res": 2
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 13,
+            "vit": 11,
+            "int": 7,
+            "cat": 7,
+            "dex": 10,
+            "agi": 9
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.05
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 270
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ホブゴブリン",
+            "alias": "Hobgoblin",
+            "treasureClass": "A"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_HUGE_SPIDER",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Insect",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 2,
+            "maxHP": 6,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 5,
+            "def": 5,
+            "res": 2
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 12,
+            "vit": 10,
+            "int": 4,
+            "cat": 4,
+            "dex": 11,
+            "agi": 12
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.05
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 300
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ヒュージスパイダー",
+            "alias": "Huge Spider",
+            "treasureClass": "A",
+            "specialAttack": "poison_attack"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_KILLER_WOLF",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Beast",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 5,
+            "maxHP": 18,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 9,
+            "def": 6,
+            "res": 4
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 14,
+            "vit": 12,
+            "int": 6,
+            "cat": 7,
+            "dex": 14,
+            "agi": 16
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 1300
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "キラー・ウルフ",
+            "alias": "Killer Wolf",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_KOBOLD",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Kobold",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 1,
+            "maxHP": 3,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 3,
+            "def": 4,
+            "res": 1
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 9,
+            "vit": 8,
+            "int": 7,
+            "cat": 5,
+            "dex": 10,
+            "agi": 11
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.05
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 415
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "コボルド",
+            "alias": "Kobold",
+            "treasureClass": "A"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_LIFESTEALER",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Undead",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 3,
+            "maxHP": 13,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 6,
+            "def": 6,
+            "res": 4
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 14,
+            "vit": 13,
+            "int": 8,
+            "cat": 5,
+            "dex": 11,
+            "agi": 10
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Undead"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.4,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 760
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ライフ・スティーラー",
+            "alias": "Lifestealer",
+            "treasureClass": "B",
+            "tags": "drain_attack,undead"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_LVL7_FIGHTER",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 8,
+            "maxHP": 50,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 14,
+            "def": 12,
+            "res": 8
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 18,
+            "vit": 15,
+            "int": 10,
+            "cat": 11,
+            "dex": 14,
+            "agi": 12
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 4000
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "Lv7 戦士",
+            "alias": "Lvl 7 Fighter",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_LVL7_MAGE",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 8,
+            "maxHP": 28,
+            "maxMP": 18,
+            "maxSP": 0,
+            "atk": 7,
+            "def": 6,
+            "res": 12
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 9,
+            "vit": 11,
+            "int": 18,
+            "cat": 14,
+            "dex": 13,
+            "agi": 12
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Mage"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 4200
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "Lv7 術師",
+            "alias": "Lvl 7 Mage",
+            "treasureClass": "B",
+            "knownSpells": "LAHALITO,MAHALITO"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_MAELIFIC",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Demon",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 14,
+            "maxHP": 100,
+            "maxMP": 30,
+            "maxSP": 0,
+            "atk": 16,
+            "def": 14,
+            "res": 16
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 16,
+            "vit": 16,
+            "int": 18,
+            "cat": 17,
+            "dex": 16,
+            "agi": 15
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Mage"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 14000
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "マーリフィック",
+            "alias": "Maelific",
+            "treasureClass": "B",
+            "knownSpells": "TILTOWAIT,MALIKTO,LAHALITO"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_MAJOR_DAIMYO",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 6,
+            "maxHP": 28,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 11,
+            "def": 9,
+            "res": 6
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 17,
+            "vit": 14,
+            "int": 12,
+            "cat": 13,
+            "dex": 14,
+            "agi": 13
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 2000
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "メジャー・ダイミョウ",
+            "alias": "Major Daimyo",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_MANTICORE",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Beast",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 8,
+            "maxHP": 45,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 13,
+            "def": 10,
+            "res": 8
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 17,
+            "vit": 16,
+            "int": 9,
+            "cat": 10,
+            "dex": 14,
+            "agi": 13
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 3500
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "マンティコア",
+            "alias": "Manticore",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_MASTER_NINJA",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 10,
+            "maxHP": 50,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 15,
+            "def": 12,
+            "res": 10
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 17,
+            "vit": 14,
+            "int": 13,
+            "cat": 13,
+            "dex": 18,
+            "agi": 18
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 6000
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "マスター・ニンジャ",
+            "alias": "Master Ninja",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_MASTER_THIEF",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 7,
+            "maxHP": 24,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 10,
+            "def": 7,
+            "res": 6
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 13,
+            "vit": 12,
+            "int": 13,
+            "cat": 11,
+            "dex": 17,
+            "agi": 17
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 2200
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "マスター・シーフ",
+            "alias": "Master Thief",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_MINOR_DAIMYO",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 3,
+            "maxHP": 12,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 6,
+            "def": 7,
+            "res": 3
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 14,
+            "vit": 13,
+            "int": 11,
+            "cat": 12,
+            "dex": 13,
+            "agi": 12
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.08
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 720
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "小大名",
+            "alias": "Minor Daimyo",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_MURPHYS_GHOST",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Undead",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 5,
+            "maxHP": 60,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 5,
+            "def": 6,
+            "res": 5
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 13,
+            "vit": 18,
+            "int": 11,
+            "cat": 8,
+            "dex": 11,
+            "agi": 10
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Undead"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.0,
+            "rareItem": "",
+            "rareRate": 0.0
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 4450
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "マーフィーズ・ゴースト",
+            "alias": "Murphy's Ghost",
+            "treasureClass": "C",
+            "tags": "fixed,undead,xp_farm"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_OLD_WITCH",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 7,
+            "maxHP": 22,
+            "maxMP": 12,
+            "maxSP": 0,
+            "atk": 6,
+            "def": 5,
+            "res": 10
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 8,
+            "vit": 11,
+            "int": 17,
+            "cat": 14,
+            "dex": 12,
+            "agi": 11
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Mage"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 2400
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "オールド・ウィッチ",
+            "alias": "Old Witch",
+            "treasureClass": "B",
+            "knownSpells": "MAHALITO,DILTO"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_ORC",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Orc",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 1,
+            "maxHP": 5,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 5,
+            "def": 4,
+            "res": 1
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 12,
+            "vit": 11,
+            "int": 6,
+            "cat": 6,
+            "dex": 9,
+            "agi": 8
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.05
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 235
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "オーク",
+            "alias": "Orc",
+            "treasureClass": "A"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_PIXIE",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Fairy",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 6,
+            "maxHP": 16,
+            "maxMP": 8,
+            "maxSP": 0,
+            "atk": 8,
+            "def": 6,
+            "res": 9
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 7,
+            "vit": 9,
+            "int": 15,
+            "cat": 12,
+            "dex": 16,
+            "agi": 18
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Mage"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 1800
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ピクシー",
+            "alias": "Pixie",
+            "treasureClass": "B",
+            "knownSpells": "KATINO,DILTO"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_POISON_GIANT",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Giant",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 13,
+            "maxHP": 110,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 20,
+            "def": 15,
+            "res": 11
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 19,
+            "vit": 18,
+            "int": 8,
+            "cat": 9,
+            "dex": 12,
+            "agi": 11
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 12000
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ポイズン・ジャイアント",
+            "alias": "Poison Giant",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_ROGUE",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 1,
+            "maxHP": 4,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 5,
+            "def": 5,
+            "res": 2
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 11,
+            "vit": 10,
+            "int": 11,
+            "cat": 7,
+            "dex": 14,
+            "agi": 13
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Thief"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.6,
+            "rareItem": "",
+            "rareRate": 0.08
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 380
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "盗賊",
+            "alias": "Rogue",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_SCRYER",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 3,
+            "maxHP": 10,
+            "maxMP": 6,
+            "maxSP": 0,
+            "atk": 4,
+            "def": 3,
+            "res": 7
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 9,
+            "vit": 11,
+            "int": 16,
+            "cat": 13,
+            "dex": 11,
+            "agi": 10
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Mage"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 800
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "占術士",
+            "alias": "Scryer",
+            "treasureClass": "B",
+            "knownSpells": "KATINO,MAHALITO"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_SWORDSMAN",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Human",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 4,
+            "maxHP": 14,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 7,
+            "def": 7,
+            "res": 4
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 15,
+            "vit": 13,
+            "int": 9,
+            "cat": 9,
+            "dex": 14,
+            "agi": 13
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.08
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 850
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "剣士",
+            "alias": "Swordsman",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_UNDEAD_KOBOLD",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Undead",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 1,
+            "maxHP": 4,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 4,
+            "def": 4,
+            "res": 2
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 10,
+            "vit": 9,
+            "int": 4,
+            "cat": 4,
+            "dex": 9,
+            "agi": 8
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Undead"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.45,
+            "rareItem": "",
+            "rareRate": 0.05
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 235
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "屍者コボルド",
+            "alias": "Undead Kobold",
+            "treasureClass": "A",
+            "tags": "undead"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_VAMPIRE",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Undead",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 11,
+            "maxHP": 70,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 16,
+            "def": 13,
+            "res": 14
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 17,
+            "vit": 16,
+            "int": 16,
+            "cat": 14,
+            "dex": 16,
+            "agi": 16
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 9000
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ヴァンパイア",
+            "alias": "Vampire",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_VAMPIRE_LORD",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Undead",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 13,
+            "maxHP": 95,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 18,
+            "def": 15,
+            "res": 16
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 18,
+            "vit": 17,
+            "int": 17,
+            "cat": 15,
+            "dex": 17,
+            "agi": 17
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 13000
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ヴァンパイア・ロード",
+            "alias": "Vampire Lord",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_VORPAL_BUNNY",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Beast",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 1,
+            "maxHP": 4,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 4,
+            "def": 4,
+            "res": 2
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 7,
+            "vit": 8,
+            "int": 5,
+            "cat": 5,
+            "dex": 16,
+            "agi": 18
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Beast"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.08
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 410
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ヴォーパル・バニー",
+            "alias": "Vorpal Bunny",
+            "treasureClass": "B",
+            "tags": "fast"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_WERDNA",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Demon",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 13,
+            "maxHP": 200,
+            "maxMP": 40,
+            "maxSP": 0,
+            "atk": 12,
+            "def": 16,
+            "res": 18
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 18,
+            "vit": 18,
+            "int": 18,
+            "cat": 18,
+            "dex": 18,
+            "agi": 17
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Mage"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.0,
+            "rareItem": "",
+            "rareRate": 0.0
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 42000
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ワードナ",
+            "alias": "Werdna",
+            "treasureClass": "",
+            "knownSpells": "TILTOWAIT,MALOR,MAHAMAN,HAMAN,LAHALITO,MADALTO"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_WERESTAG",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Lycanthrope",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 3,
+            "maxHP": 14,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 7,
+            "def": 6,
+            "res": 3
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 16,
+            "vit": 14,
+            "int": 8,
+            "cat": 8,
+            "dex": 13,
+            "agi": 14
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.08
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 600
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ウェアスタッグ",
+            "alias": "Werestag",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_WERE_BEAR",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Beast",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 7,
+            "maxHP": 38,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 12,
+            "def": 9,
+            "res": 6
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 17,
+            "vit": 16,
+            "int": 8,
+            "cat": 9,
+            "dex": 12,
+            "agi": 12
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 2800
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ウェア・ベア",
+            "alias": "Were Bear",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_WERE_TIGER",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Beast",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 10,
+            "maxHP": 60,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 16,
+            "def": 13,
+            "res": 9
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 18,
+            "vit": 17,
+            "int": 9,
+            "cat": 11,
+            "dex": 15,
+            "agi": 15
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.1
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 6800
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ウェア・タイガー",
+            "alias": "Were Tiger",
+            "treasureClass": "B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "AVATAR_WIZ1_ZOMBIE",
+    "category": "Avatars",
+    "entityCategory": "avatar",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "agent.identity",
+          "payload": {
+            "agentType": "monster",
+            "raceType": "Undead",
+            "rigType": ""
+          }
+        },
+        {
+          "id": "agent.stats",
+          "payload": {
+            "level": 2,
+            "maxHP": 7,
+            "maxMP": 0,
+            "maxSP": 0,
+            "atk": 4,
+            "def": 4,
+            "res": 2
+          }
+        },
+        {
+          "id": "agent.attributes",
+          "payload": {
+            "str": 12,
+            "vit": 14,
+            "int": 3,
+            "cat": 3,
+            "dex": 6,
+            "agi": 5
+          }
+        },
+        {
+          "id": "agent.visual",
+          "payload": {
+            "prefabKey": "",
+            "iconAddress": "",
+            "portraitAddress": ""
+          }
+        },
+        {
+          "id": "agent.brain",
+          "payload": {
+            "brainType": "Fighter"
+          }
+        },
+        {
+          "id": "agent.drop",
+          "payload": {
+            "commonItem": "",
+            "commonRate": 0.5,
+            "rareItem": "",
+            "rareRate": 0.05
+          }
+        },
+        {
+          "id": "agent.exp_reward",
+          "payload": {
+            "exp": 230
+          }
+        },
+        {
+          "id": "agent.meta",
+          "payload": {
+            "displayName": "ゾンビ",
+            "alias": "Zombie",
+            "treasureClass": "A",
+            "tags": "undead"
+          }
+        }
+      ]
+    }
+  }
+]

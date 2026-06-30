@@ -1,0 +1,9 @@
+{
+  "name": "stereo",
+  "version": "1.0.0",
+  "description": "STEREO — 3D World Lobby and Web Monitor Environment",
+  "scripts": {
+    "verify": "node scripts/check-engine-compat.js"
+  },
+  "devDependencies": {}
+}

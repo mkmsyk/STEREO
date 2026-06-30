@@ -1,0 +1,132 @@
+[
+  {
+    "entityCode": "SKILL_YRD_HALITO",
+    "category": "Skills",
+    "entityCategory": "skill",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "skill.meta",
+          "payload": {
+            "skillCode": "SKILL_YRD_HALITO",
+            "category": "Arcane",
+            "subCategory": "Ranged",
+            "learnMethod": "AutoOnLevel",
+            "requiredLevel": 1,
+            "learnCost": 0,
+            "maxRank": 1,
+            "hitEffectCode": "",
+            "isHiddenUntilAvailable": false,
+            "addressablesKey": "",
+            "iconAddress": "",
+            "mpCost": 2,
+            "spCost": 0,
+            "cooldownTurns": 0,
+            "endTurnOnUse": true,
+            "activationType": "Active",
+            "attributesFlags": 264,
+            "attackAttributesFlags": 0,
+            "skillPower": 8,
+            "hitCount": 1,
+            "accuracyBonusPercent": 0,
+            "powerCoefficient": 1.0,
+            "triggerCondition": "",
+            "triggerChancePercent": 0,
+            "chargeTime": 0,
+            "maxStacks": 0,
+            "stackPrefabAddress": "",
+            "modName": "Yrdraziw",
+            "isActive": true
+          }
+        },
+        {
+          "id": "skill.area",
+          "payload": {
+            "shape": "ForwardLine",
+            "range": 1,
+            "directionMode": "face"
+          }
+        },
+        {
+          "id": "skill.effect",
+          "payload": {
+            "effects": [
+              {
+                "type": "damage",
+                "hitCount": 1,
+                "powerCoefficient": 1.0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "entityCode": "SKILL_YRD_KATINO",
+    "category": "Skills",
+    "entityCategory": "skill",
+    "baseEntityCode": "",
+    "prefabKey": "",
+    "jsonBody": {
+      "comps": [
+        {
+          "id": "skill.meta",
+          "payload": {
+            "skillCode": "SKILL_YRD_KATINO",
+            "category": "Arcane",
+            "subCategory": "Debuff",
+            "learnMethod": "AutoOnLevel",
+            "requiredLevel": 1,
+            "learnCost": 0,
+            "maxRank": 1,
+            "hitEffectCode": "",
+            "isHiddenUntilAvailable": false,
+            "addressablesKey": "",
+            "iconAddress": "",
+            "mpCost": 3,
+            "spCost": 0,
+            "cooldownTurns": 0,
+            "endTurnOnUse": true,
+            "activationType": "Active",
+            "attributesFlags": 8,
+            "attackAttributesFlags": 0,
+            "skillPower": 0,
+            "hitCount": 1,
+            "accuracyBonusPercent": 0,
+            "powerCoefficient": 0.0,
+            "triggerCondition": "",
+            "triggerChancePercent": 0,
+            "chargeTime": 0,
+            "maxStacks": 0,
+            "stackPrefabAddress": "",
+            "modName": "Yrdraziw",
+            "isActive": true
+          }
+        },
+        {
+          "id": "skill.area",
+          "payload": {
+            "shape": "Forward3Way",
+            "range": 1,
+            "directionMode": "face"
+          }
+        },
+        {
+          "id": "skill.effect",
+          "payload": {
+            "effects": [
+              {
+                "type": "damage",
+                "hitCount": 1,
+                "powerCoefficient": 1.0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

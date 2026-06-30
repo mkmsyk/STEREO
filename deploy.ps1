@@ -23,7 +23,8 @@ $filesToCopy = @(
     "index.html",
     "style.css",
     "stereo.js",
-    "app.js"
+    "app.js",
+    "monoral-gadget.js"
 )
 
 foreach ($fileName in $filesToCopy) {
@@ -45,6 +46,22 @@ $destGameJs = Join-Path $cmsGameTarget "game.js"
 Copy-Item -LiteralPath $monoralGameJs -Destination $destGameJs -Force
 Write-Host "   Copied: game.js (from MONORAL)"
 
+$monoralGadgetHtml = Join-Path $monoralDir "gb-demo\gadget.html"
+if (-not (Test-Path -LiteralPath $monoralGadgetHtml)) {
+    throw "Missing MONORAL source file: $monoralGadgetHtml"
+}
+$destGadgetHtml = Join-Path $cmsGameTarget "gadget.html"
+Copy-Item -LiteralPath $monoralGadgetHtml -Destination $destGadgetHtml -Force
+Write-Host "   Copied: gadget.html (from MONORAL)"
+
+$monoralStyleCss = Join-Path $monoralDir "gb-demo\style.css"
+if (-not (Test-Path -LiteralPath $monoralStyleCss)) {
+    throw "Missing MONORAL source file: $monoralStyleCss"
+}
+$destGadgetCss = Join-Path $cmsGameTarget "gadget.css"
+Copy-Item -LiteralPath $monoralStyleCss -Destination $destGadgetCss -Force
+Write-Host "   Copied: style.css -> gadget.css (from MONORAL)"
+
 # 2. CMSのデプロイスクリプトを起動
 Write-Host "`n==> [Deploy] Triggering CMS VPS deployment..." -ForegroundColor Cyan
 $cmsDeployScript = Join-Path $cmsDir "deploy.ps1"
@@ -57,7 +74,7 @@ if (-not (Test-Path -LiteralPath $cmsDeployScript)) {
 Set-Location -LiteralPath $cmsDir
 
 Write-Host "==> [Git] Committing changes in CMS..." -ForegroundColor Cyan
-git add src/main/resources/public/games/gb-demo/index.html src/main/resources/public/games/gb-demo/style.css src/main/resources/public/games/gb-demo/stereo.js src/main/resources/public/games/gb-demo/app.js src/main/resources/public/games/gb-demo/game.js
+git add src/main/resources/public/games/gb-demo/index.html src/main/resources/public/games/gb-demo/style.css src/main/resources/public/games/gb-demo/stereo.js src/main/resources/public/games/gb-demo/app.js src/main/resources/public/games/gb-demo/game.js src/main/resources/public/games/gb-demo/gadget.html src/main/resources/public/games/gb-demo/monoral-gadget.js src/main/resources/public/games/gb-demo/gadget.css
 
 $gitStatus = git status --porcelain
 if ($gitStatus) {
