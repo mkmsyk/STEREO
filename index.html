@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STEREO &amp; MONORAL - Nested Console World</title>
+  <title>MONORAL / ENGINEv4 - Nested Console Prototype</title>
   <link rel="stylesheet" href="style.css?v=1.0.20">
   <!-- Three.js & OrbitControls CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <!-- Wasmoon (Lua WebAssembly VM) UMD CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/wasmoon@1.15.0/dist/index.js"></script>
 </head>
 <body>
   <!-- スマホ実機用クラッシュロガー -->
@@ -53,7 +55,7 @@
   <!-- モニタに投影するオフスクリーンキャンバス (隠し要素) -->
   <canvas id="virtual-screen" width="160" height="144" style="display: none;"></canvas>
 
-  <!-- カスタム警告ダイアログ -->
+  <!-- カスタム警告ダイアログ (ゲーム内の機能として表示) -->
   <div id="error-dialog" class="error-dialog-overlay" style="display: none;">
     <div class="error-dialog-content">
       <div class="error-dialog-icon">⚠️</div>
@@ -63,9 +65,9 @@
     </div>
   </div>
 
-  <!-- 2D Engine, 3D Engine, App Controller -->
+  <!-- ゲームエンジンとアプリケーション制御 -->
   <script src="game.js?v=1.0.20"></script>
   <script src="stereo.js?v=1.0.20"></script>
-  <script src="app.js?v=1.0.20"></script>
+  <script src="stereo-app.js?v=1.0.20"></script>
 </body>
 </html>

@@ -46,6 +46,14 @@ $destGameJs = Join-Path $cmsGameTarget "game.js"
 Copy-Item -LiteralPath $monoralGameJs -Destination $destGameJs -Force
 Write-Host "   Copied: game.js (from MONORAL)"
 
+$monoralGameEsJs = Join-Path $monoralDir "gb-demo\game_es.js"
+if (-not (Test-Path -LiteralPath $monoralGameEsJs)) {
+    throw "Missing MONORAL source file: $monoralGameEsJs"
+}
+$destGameEsJs = Join-Path $cmsGameTarget "game_es.js"
+Copy-Item -LiteralPath $monoralGameEsJs -Destination $destGameEsJs -Force
+Write-Host "   Copied: game_es.js (from MONORAL)"
+
 $monoralGadgetHtml = Join-Path $monoralDir "gb-demo\gadget.html"
 if (-not (Test-Path -LiteralPath $monoralGadgetHtml)) {
     throw "Missing MONORAL source file: $monoralGadgetHtml"
@@ -74,7 +82,7 @@ if (-not (Test-Path -LiteralPath $cmsDeployScript)) {
 Set-Location -LiteralPath $cmsDir
 
 Write-Host "==> [Git] Committing changes in CMS..." -ForegroundColor Cyan
-git add src/main/resources/public/games/gb-demo/index.html src/main/resources/public/games/gb-demo/style.css src/main/resources/public/games/gb-demo/stereo.js src/main/resources/public/games/gb-demo/app.js src/main/resources/public/games/gb-demo/game.js src/main/resources/public/games/gb-demo/gadget.html src/main/resources/public/games/gb-demo/monoral-gadget.js src/main/resources/public/games/gb-demo/gadget.css
+git add src/main/resources/public/games/gb-demo/index.html src/main/resources/public/games/gb-demo/style.css src/main/resources/public/games/gb-demo/stereo.js src/main/resources/public/games/gb-demo/app.js src/main/resources/public/games/gb-demo/game.js src/main/resources/public/games/gb-demo/gadget.html src/main/resources/public/games/gb-demo/monoral-gadget.js src/main/resources/public/games/gb-demo/gadget.css src/main/resources/public/games/gb-demo/game_es.js
 
 $gitStatus = git status --porcelain
 if ($gitStatus) {

@@ -1,6 +1,6 @@
 /**
  * STEREO / MONORAL - Simple Console Mockup (gb-demo)
- * Refactored using STEREO Base Components
+ * Refactored using STEREO Base Components with fixes for cartridge position and boot sync
  */
 
 (function() {
@@ -173,7 +173,7 @@
         consoleTargets.rotYAngle += Math.PI; // 背面からさらに正面へ(+180度)
         const targetPos = new THREE.Vector3(0, 2.15, 0);
         
-        directionalRotator.start(targetPos, consoleTargets.rotYAngle, 0.45, () => {
+        directionalRotator.start(targetPos, Math.PI / 2, consoleTargets.rotYAngle, 0.45, () => {
           consoleTargets.rotYAngle = consoleTargets.rotYAngle % (Math.PI * 2);
           gbConsole.rotation.set(Math.PI / 2, consoleTargets.rotYAngle, 0, 'YXZ');
           gbConsole.quaternion.setFromEuler(gbConsole.rotation);
@@ -185,7 +185,7 @@
       }
     };
 
-    // 発光・電源マテリアル
+    // 发光・電源マテリアル
     powerLinker = new PowerMaterialLinker(screenMesh.material, powerLEDMat, screenLight);
     powerLinker.setPower(GBGame.getPower());
 
@@ -419,7 +419,9 @@
     cartLabel.rotation.x = -Math.PI / 2;
     cartridge3D.add(cartLabel);
 
-    cartridge3D.position.set(0, 0.22, -1.3); // スロット内の通常差し込み位置 (Y=0.22, Z=-1.3)
+    cartridge3D.position.set(0, 0.1, -1.3); // 正しい配置位置に修正
+    cartridge3D.rotation.z = Math.PI;       // 天地を維持しつつラベル面を背面に向ける (Z軸180度回転)
+    cartridge3D.visible = false;            // 初期非表示
     gbConsole.add(cartridge3D);
 
     // 初期マテリアル色更新
@@ -443,9 +445,13 @@
     const dt = Math.min((timeMs - lastTimeSec) / 1000, 0.1); // 秒ベース、最大フレームドロップ制限
     lastTimeSec = timeMs;
 
-    // 1. STEREO 補間アニメーション更新
+    // 1. STEREO 補間アニメーション更新 (二重呼び出し防止)
     if (directionalRotator) {
-      directionalRotator.update(dt);
+      const seqActive = cartridgeSequencer && cartridgeSequencer.active;
+      const seqIsRotating = seqActive && (cartridgeSequencer.state === 'ROTATE_GB' || cartridgeSequencer.state === 'ROTATE_BACK');
+      if (!seqIsRotating) {
+        directionalRotator.update(dt);
+      }
     }
 
     if (cartridgeSequencer && cartridgeSequencer.active) {
@@ -512,7 +518,7 @@
               cartridge3D.visible = true;
               cartridge3D.position.z = -2.7;
             } else {
-              syncTableCartridges();
+              // EJECTのみ完了時は特に何もしない（sequencer側が自動でROTATE_BACKへ遷移する）
             }
           }
         }
@@ -582,12 +588,14 @@
         consoleTargets.rotYAngle = 0;
 
         // 起き上がり完了後に、背面交換をキック！
-        directionalRotator.start(targetPos, 0, 0.5, () => {
+        directionalRotator.start(targetPos, Math.PI / 2, 0, 0.5, () => {
+          GBGame.audio.resume(); // オーディオ再開
           consoleTargets.rotYAngle += Math.PI;
           cartridgeSequencer.start(oldCartId, cartId, targetPos, consoleTargets.rotYAngle);
         });
       } else {
         // 2. すでに起き上がっているなら、直接カセット交換
+        GBGame.audio.resume(); // オーディオ再開
         consoleTargets.rotYAngle += Math.PI;
         cartridgeSequencer.start(oldCartId, cartId, consoleTargets.pos, consoleTargets.rotYAngle);
       }
@@ -784,6 +792,7 @@
     function togglePower() {
       const currentPower = GBGame.getPower();
       const nextPower = !currentPower;
+      GBGame.audio.resume(); // オーディオ再開
       GBGame.setPower(nextPower);
       if (powerLinker) {
         powerLinker.setPower(nextPower);
@@ -799,7 +808,7 @@
           const targetRot = new THREE.Quaternion().setFromEuler(new THREE.Euler(
             Math.PI / 2, 0, 0, 'YXZ'
           ));
-          directionalRotator.start(targetPos, 0, 0.5, null);
+          directionalRotator.start(targetPos, Math.PI / 2, 0, 0.5, null);
         }
       } else {
         animTargets.switchX = -0.74;
@@ -809,6 +818,7 @@
 
     function pickConsoleUp() {
       consolePickedUp = true;
+      GBGame.audio.resume(); // オーディオ再開
       const targetPos = new THREE.Vector3(0, 2.15, 0);
       const targetRot = new THREE.Quaternion().setFromEuler(new THREE.Euler(
         Math.PI / 2, 0, 0, 'YXZ'
@@ -816,7 +826,7 @@
       consoleTargets.pos.copy(targetPos);
       consoleTargets.rotYAngle = 0;
 
-      directionalRotator.start(targetPos, 0, 0.6, null);
+      directionalRotator.start(targetPos, Math.PI / 2, 0, 0.6, null);
 
       activeUIPanel.style.display = 'flex';
       instructionPanel.style.display = 'none';
@@ -831,7 +841,7 @@
       consoleTargets.pos.copy(targetPos);
       consoleTargets.rotYAngle = -Math.PI / 12;
 
-      directionalRotator.start(targetPos, -Math.PI / 12, 0.6, null);
+      directionalRotator.start(targetPos, 0, -Math.PI / 12, 0.6, null);
 
       activeUIPanel.style.display = 'none';
       instructionPanel.style.display = 'block';
@@ -892,7 +902,7 @@
   window.togglePower = function() {
     const sw = gbConsole.getObjectByName(powerClickArea.name) || powerClickArea;
     if (sw) {
-      // 擬似クリックトリガー
+      // 擬似クリック
       setupEvents.togglePower();
     }
   };
