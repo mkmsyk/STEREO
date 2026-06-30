@@ -33,7 +33,7 @@ body, html {
   width: 100%;
   height: 100%;
   z-index: 10;
-  pointer-events: none; /* UI要素以外は下層のドラッグを通す */
+  pointer-events: none; /* UI要素以外は下層 of ドラッグを通す */
   padding: 24px;
 }
 
@@ -213,7 +213,7 @@ body, html {
   color: #fee2e2;
 }
 
-/* 2Dゲーム画面のグラスモーフィズムDOM表示用 (必要に応じて使用) */
+/* 2Dゲーム画面のグラスモーフィズムDOM表示用 */
 .ui-title-banner {
   pointer-events: none;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -236,7 +236,7 @@ body, html {
 /* スマホ対応 */
 @media(max-width: 768px) {
   .left-bottom-panel {
-    display: none; /* スマホでは操作説明を非表示にして3D画面を広く保つ */
+    display: none;
   }
   .right-bottom-container {
     bottom: 12px;

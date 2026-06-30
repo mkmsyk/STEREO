@@ -56,8 +56,6 @@ class DirectionalRotator {
     this.active = false;
     this.t = 0;
     this.duration = 0.5;
-    this.startX = 0;
-    this.targetX = 0;
     this.startY = 0;
     this.targetY = 0;
     this.startPos = new THREE.Vector3();
@@ -65,12 +63,10 @@ class DirectionalRotator {
     this.onComplete = null;
   }
 
-  start(targetPos, targetXAngle, targetYAngle, duration = 0.5, onComplete = null) {
+  start(targetPos, targetYAngle, duration = 0.5, onComplete = null) {
     this.startPos.copy(this.object.position);
     this.targetPos.copy(targetPos);
     
-    this.startX = this.object.rotation.x;
-    this.targetX = targetXAngle;
     this.startY = this.object.rotation.y;
     this.targetY = targetYAngle;
     
@@ -90,16 +86,15 @@ class DirectionalRotator {
     // 位置のイージング
     this.object.position.lerpVectors(this.startPos, this.targetPos, ease);
 
-    // X軸およびY軸オイラー角度の絶対数値補間 (slerpによるブレを防止)
-    const currentX = this.startX + (this.targetX - this.startX) * ease;
+    // Y軸オイラー角度の絶対数値補間 (slerpによるブレを防止)
     const currentY = this.startY + (this.targetY - this.startY) * ease;
-    this.object.rotation.set(currentX, currentY, 0, 'YXZ');
+    this.object.rotation.set(Math.PI / 2, currentY, 0, 'YXZ');
     this.object.quaternion.setFromEuler(this.object.rotation);
 
     if (progress >= 1.0) {
       this.active = false;
       this.object.position.copy(this.targetPos);
-      this.object.rotation.set(this.targetX, this.targetY, 0, 'YXZ');
+      this.object.rotation.set(Math.PI / 2, this.targetY, 0, 'YXZ');
       this.object.quaternion.setFromEuler(this.object.rotation);
       if (this.onComplete) {
         this.onComplete();
@@ -139,7 +134,7 @@ class ObjectReplacementSequencer {
     this.t = 0;
 
     // 1. 本体回転アニメーションのキック (背面へ)
-    this.rotator.start(targetPos, Math.PI / 2, targetYAngle, this.durations.ROTATE_GB, () => {
+    this.rotator.start(targetPos, targetYAngle, this.durations.ROTATE_GB, () => {
       this.transitionToNext();
     });
   }
@@ -256,11 +251,27 @@ class MonitorTextureStreamer {
   constructor(canvas, texture) {
     this.canvas = canvas;
     this.texture = texture;
+    this.lastScore = -1;
+    this.lastState = '';
   }
 
   update(gameInstance) {
     if (!gameInstance || !this.texture) return;
-    this.texture.needsUpdate = true;
+
+    const currentScore = gameInstance.getScore();
+    const currentState = gameInstance.getState();
+    const isPowered = gameInstance.getPower();
+
+    if (!isPowered) {
+      this.texture.needsUpdate = true;
+      return;
+    }
+
+    if (currentScore !== this.lastScore || currentState !== this.lastState || Math.random() < 0.2) {
+      this.texture.needsUpdate = true;
+      this.lastScore = currentScore;
+      this.lastState = currentState;
+    }
   }
 }
 
